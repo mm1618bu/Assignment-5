@@ -1,0 +1,61 @@
+class Rectangle:
+#class variables
+    a=0
+    b=0
+    c=0
+    d=0
+    e=0
+    f=0
+    X=0
+    Y=0
+#constructor
+    def __init__(self, a, b,c,d,e,f):
+        self.a = int(a)
+        self.b = int(b)
+        self.c = int(c)
+        self.d = int(d)
+        self.e = int(e)
+        self.f = int(f)
+
+
+#getter setter methods
+    def getA(self):
+        return self.a
+    def getB(self):
+        return self.b
+    def getC(self):
+        return self.c
+    def getD(self):
+        return self.d
+    def getE(self):
+        return self.e
+    def getF(self):
+        return self.f
+
+#check method is solvable
+    def isSolvable(self):
+        if((self.a*self.d - self.b*self.c) == 0):
+            print('The equation has no solution')
+        else:
+            print('The equation has solution')
+# methods to calculate X and Y
+    def getX(self):
+        return (self.e*self.d - self.b*self.f) / (self.a*self.d - self.b*self.c)
+
+    def getY(self):
+        return (self.a*self.f - self.e*self.c) / (self.a*self.d - self.b*self.c)
+
+
+#readind numbers from user
+a = input('Enter a: ')
+b = input('Enter b: ')
+c = input('Enter c: ')
+d = input('Enter d: ')
+e = input('Enter e: ')
+f = input('Enter f: ')
+
+rect = Rectangle(1,2,3,4,5,6)
+#calling methods
+rect.isSolvable()
+print('X value: ',rect.getX())
+print('Y value: ',rect.getY())
