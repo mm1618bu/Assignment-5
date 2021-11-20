@@ -1,8 +1,14 @@
+a = int(input("Value of A"))
+b = int(input("Value of B"))
+c = int(input("Value of C"))
+d = int(input("Value of D"))
+e = int(input("Value of E "))
+f = int(input("Value of F "))
+
 class LinearEquation:
 #class variables
-    
 #constructor
-    def __init__(self,a, b,c,d,e,f):
+    def __init__(self,a,b,c,d,e,f):
         self.a = a
         self.b = b
         self.c = c
@@ -13,22 +19,16 @@ class LinearEquation:
 
 #getter setter methods
     def getA(self):
-        self.a = int(input(" "))
         return self.a
     def getB(self):
-        self.b = int(input(" "))
         return self.b
     def getC(self):
-        self.c = int(input(" "))
         return self.c
     def getD(self):
-        self.d = int(input(" "))
         return self.d
     def getE(self):
-        self.e = int(input(" "))
         return self.e
     def getF(self):
-        self.f = int(input(" "))
         return self.f
 
 #check method is solvable
@@ -45,7 +45,7 @@ class LinearEquation:
         return (self.a*self.f - self.e*self.c) / (self.a*self.d - self.b*self.c)
 
 
-Linear = LinearEquation(2,22,222,2222,22222,222222)
+Linear = LinearEquation(a,b,c,d,e,f)
 #calling methods
 Linear.isSolvable()
 print('X value: ',Linear.getX())
