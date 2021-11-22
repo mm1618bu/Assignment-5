@@ -1,15 +1,19 @@
 #! /usr/bin/python3
 
+# Define Rectangle Class
 class Rectangle:
+	# Initialize Width and Height
 	def __init__(self,width,height):
 		self.width = width
 		self.height = height
-
+	# Return the area
 	def getArea(self):
 		return self.width * self.height
-
+	# Return the Permimiter
 	def getPerimeter(self):
 		return(self.height + self.height) * 2
+
+# Run the Program with the desired parameters
 
 def main():
     width1, height1 = 4,40
