@@ -46,7 +46,6 @@ class LinearEquation:
 
 
 Linear = LinearEquation(a,b,c,d,e,f)
-#calling methods
 Linear.isSolvable()
 print('X value: ',Linear.getX())
 print('Y value: ',Linear.getY())
