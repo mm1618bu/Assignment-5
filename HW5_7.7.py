@@ -1,3 +1,4 @@
+# Set the inital variables
 a = int(input("Value of A"))
 b = int(input("Value of B"))
 c = int(input("Value of C"))
@@ -6,8 +7,7 @@ e = int(input("Value of E "))
 f = int(input("Value of F "))
 
 class LinearEquation:
-#class variables
-#constructor
+# Activate Variables
     def __init__(self,a,b,c,d,e,f):
         self.a = a
         self.b = b
@@ -17,7 +17,7 @@ class LinearEquation:
         self.f = f
 
 
-#getter setter methods
+#Setter Method Initialize
     def getA(self):
         return self.a
     def getB(self):
@@ -31,13 +31,13 @@ class LinearEquation:
     def getF(self):
         return self.f
 
-#check method is solvable
+#Solvable Method
     def isSolvable(self):
         if((self.a*self.d - self.b*self.c) == 0):
             print('The equation has no solution')
         else:
             print('The equation has solution')
-# methods to calculate X and Y
+# Find X and Y
     def getX(self):
         return (self.e*self.d - self.b*self.f) / (self.a*self.d - self.b*self.c)
 
